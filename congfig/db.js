@@ -1,12 +1,12 @@
-// const mongoose = require("mongoose");
-// require("dotenv").config();
+const mongoose = require("mongoose");
+require("dotenv").config();
 
-// const connection= async()=>{
-//   await mongoose.connect(process.env.mongoDBUrl);
+const connection= async()=>{
+  await mongoose.connect(process.env.mongoDBUrl);
 
-//   console.log("connection is done");
+  console.log("connection is done");
 
-// }
-// module.exports = {
-//     connection 
-// }
+}
+module.exports = {
+    connection 
+}
