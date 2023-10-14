@@ -8,7 +8,11 @@ const mongoose = require("mongoose");
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+    cors({
+        origin: "*",
+    })
+);
 const PORT = process.env.PORT || 8000
 
 const uri = process.env.mongoDBUrl;
