@@ -33,7 +33,7 @@ app.get("/gallery", async(req, res) =>{
         
     } catch (error) {
         console.log(error);
-        console.log("Error While loading Get Method");
+        console.log("Error While loading Get Method")
         
     }
     
